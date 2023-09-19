@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="/style.css" />
+    <!-- <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script> -->
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="screen join-screen active ">
+            <div class="form">
+                <h2>Join Chat Room</h2>
+                <div class="form-input">
+                    <label>UserName</label>
+                    <input type="text" id="username" />
+                </div>
+                <div class="form-input">
+                    <button id="join-user">Join </button>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat-screen ">
+            <div class="header">
+                <div class="logo">Chat Room</div>
+                <button id="exit-chat">EXIT❌</button>
+            </div>
+            <div class="messages">
+                <!-- <div class="message my-message">
+                    <div>
+                        <div class="name">You</div>
+                        <div class="text">Hii</div>
+                    </div>
+                </div>
+                <div class="update">Abc joined the chat</div>
+                <div class="message other-message">
+                    <div>
+                        <div class="name">Abc</div>
+                        <div class="text">Hii</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="typebox"><input type="text" id="message-input"><button id="send-message">Send</button></div>
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
